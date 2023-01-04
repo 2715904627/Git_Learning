@@ -12,7 +12,9 @@
 	刚刚添加到项目中的文件处于未追踪状态
 		未跟踪--->暂存
 			git add FILENAME
+			git add *
 		暂存--->未修改
 			git commit -m LOG
+			（git commit -a -m LOG 提交所有已修改文件  未跟踪的文件不会提交）
 		未修改--->已修改
-			 
+			 修改仓库文件代码即可
