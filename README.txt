@@ -18,6 +18,10 @@
 			（git commit -a -m LOG 提交所有已修改文件  未跟踪的文件不会提交）
 		未修改--->已修改
 			修改仓库文件代码即可
+	常用命令：
 		回到上次提交位置
 			git restore FILENAME
-			
+			git restore *
+		删除文件
+			git rm FILENAME
+		
