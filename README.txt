@@ -20,9 +20,11 @@
 			修改仓库文件代码即可
 	常用命令：
 		回到上次提交位置
-			git restore FILENAME
+			git restore FILENAME（只能恢复未处在暂存区的文件)
 			git restore *
 			git restore --staged FILENAME 取消暂存状态
 		删除文件
 			git rm FILENAME(只能修改未修改数据)
 			git rm -f FILENAME 强制执行
+		移动文件
+			git mv from  to 
