@@ -22,6 +22,7 @@
 		回到上次提交位置
 			git restore FILENAME
 			git restore *
+			git restore --staged FILENAME 取消暂存状态
 		删除文件
-			git rm FILENAME
-		
+			git rm FILENAME(只能修改未修改数据)
+			git rm -f FILENAME 强制执行
