@@ -17,4 +17,7 @@
 			git commit -m LOG
 			（git commit -a -m LOG 提交所有已修改文件  未跟踪的文件不会提交）
 		未修改--->已修改
-			 修改仓库文件代码即可
+			修改仓库文件代码即可
+		回到上次提交位置
+			git restore FILENAME
+			
