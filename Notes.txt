@@ -66,5 +66,21 @@
 			注：大部分情况下变基和merge可以互换使用，但是如果分支已经提交给了远程仓库，这时尽量不要使用变基
 			（多人协作情况慎用）
 		远程仓库（remote）：
-			
+			将本地库上传到github
+				git remote add origin https://github.com/2715904627/Git_Lreaning.git
+				#git remote add REMOTENAME URL
 
+				git branch -M main
+				#修改分支的名字为main
+
+				git push -u origin main
+				#将代码上传到远程仓库上  origin--REMOTENAME
+
+			在github上创建新仓库
+				echo "# Git_Lreaning" >> README.md
+				git init
+				git add README.md
+				git commit -m "first commit"
+				git branch -M main
+				git remote add origin https://github.com/2715904627/Git_Lreaning.git
+				git push -u origin main
