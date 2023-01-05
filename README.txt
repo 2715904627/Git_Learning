@@ -28,3 +28,9 @@
 			git rm -f FILENAME 强制执行
 		移动文件
 			git mv from  to 
+	分支：
+		查看分支
+			git branch
+		创建新分支
+			git branch BRANCHNAME
+		
