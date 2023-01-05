@@ -126,6 +126,17 @@
 			git tag -d TAGNAME 删除本地标签
 			git push REMOTENAME --delete TAGNAME 删除远程仓库标签
 
+	//VSCODE使用技巧
+		在终端中找到对应目录，输入code .即可进入vscode界面
+	
+	配置文件管理
+		配置文件等不希望被git监视的文件，可以在项目中添加.gitignore文件，来设置需要忽略的文件
+		直接创建即可，无需命令
+		在文件中输入需要忽略的文件名，换行结束
+		
+		
+
+		
 
 
 
