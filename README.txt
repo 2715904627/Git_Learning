@@ -29,8 +29,20 @@
 		移动文件
 			git mv from  to 
 	分支：
-		查看分支
+		查看分支(标记目前分支)
 			git branch
 		创建新分支
 			git branch BRANCHNAME
-		
+		删除分支
+			git branch -d BRANCHNAME	
+		切换分支
+			git switch BRANCHNAME
+			git switch -c BRANCHNAME(创建并切换分支) 
+		合并分支
+			切换回主分支;
+			git merge BRANCHNAME;
+			{两种方式：
+			1.fast forward 
+			2.Auto Merge （需要自己确定冲突文件修改方式：current/incoming/both）
+			}
+			
