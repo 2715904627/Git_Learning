@@ -3,7 +3,7 @@
 	name
 		git config --global user.name "Kadupul"
 	email
-				git config --global user.email "2715904627@qq.com"
+		git config --global user.email "2715904627@qq.com"
 使用：
 	git status
 		- 查看当前仓库状态
