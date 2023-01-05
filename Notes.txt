@@ -105,9 +105,32 @@
 			2.
 				·git pull 从服务器上拉取代码，并自动完成合并
 				·相当于git fetch + git merge
-				
+
 			------------------------------
 			注：push之前，一定要先检查本地库和远程库版本是否一致
+		Tag标签
+			·git switch commit_id/TAGNAME --detach -->分离头指针
+			当头指针没有指向某个分支的头部时，这种状态被称为分离头指针（HEAD detached），
+			分离头指针的状态下也可以操作代码，但是这些操作不会被记录，所以不要在分离头指针的情况下操作仓库
+			结束分离头指针状态只需切换分支即可：git switch master
+
+			·如果非要在后面的节点进行操作，可以在该节点处创建分支操作
+			git switch -c BRANCHNAME commit_id/TAGNAME
+			
+
+			可以为每一条提交记录打标签，作为commit_id的索引
+			git tag 查看所有标签
+			git tag TAGNAME commit_id
+			git push REMOTENAME TAGNAME 推送标签版本到远程仓库
+			git push REMOTENAME --tags 推送所有标签版本到远程仓库
+			git tag -d TAGNAME 删除本地标签
+			git push REMOTENAME --delete TAGNAME 删除远程仓库标签
+
+
+
+
+
+
 
 
 	
