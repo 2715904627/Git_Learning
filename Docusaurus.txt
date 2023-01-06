@@ -1,2 +1,18 @@
     在github中，可以将自己的静态页面直接部署到github上，它会提供一个地址使得该页面变成真正的网站，可供用户访问
     要求：静态页面的分支必须叫做：gh-pages
+    如果希望页面直接通过xxx.github.io访问，则需要将库的名字配置为xxx.github.io
+
+
+
+Docusaurus快速上手：
+    安装：
+        npx create-docusaurus@latest my-website classic
+        （Node.js v16.14 或以上版本（你可以运行 node -v 命令查看版本号）。 你可以用 nvm 来管理同一机器上的多个 Node 版本。）
+    启动项目：
+        npm/yarn start
+    配置项目：
+        docusaurus.config.js 项目的配置文件
+    构建项目：
+        npm run build/yarn build
+    部署项目：
+        yarn deploy(需指明分支---deploymentBranch:"gh-pages",)
